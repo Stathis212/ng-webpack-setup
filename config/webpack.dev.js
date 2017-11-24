@@ -23,8 +23,8 @@ module.exports = webpackMerge(commonConfig, {
             options: {
                 minimize: true,
                 tslint: {
-                    emitErrors: true,
-                    failOnHint: true,
+                    emitErrors: false,
+                    failOnHint: false,
                 },
             }
         }),

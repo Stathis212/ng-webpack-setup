@@ -37,7 +37,8 @@ module.exports = webpackMerge(commonConfig, {
             test: /\.js($|\?)/i,
             sourceMap: true,
             uglifyOptions: {
-                compress: true
+                compress: true, 
+                minimize: true,
             },
         }),
         //new ExtractTextPlugin(helpers.root('dist/assets/styles/') + '[name].css', {allChunks: true}),

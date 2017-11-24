@@ -1,4 +1,5 @@
 const autoprefixer = require('autoprefixer');
+const fs = require('fs');
 const helpers = require('./helpers');
 const path = require('path');
 const webpack = require('webpack');
@@ -26,6 +27,10 @@ module.exports = {
     resolve: {
       extensions: ['.ts', '.js'],
       modules: [helpers.root('src'), helpers.root('node_modules')],
+    },
+
+    node: {
+        fs: "empty"
     },
     
     module: {

@@ -6,7 +6,6 @@ const webpackMerge = require('webpack-merge');
 var autoprefixer = require('autoprefixer');
 const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const ENV = (process.env.NODE_ENV = process.env.ENV = 'production');

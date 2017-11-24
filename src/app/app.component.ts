@@ -6,4 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
 
+  helloWorld() {
+    return 'I\'m your father!';
+  }
+
 }
